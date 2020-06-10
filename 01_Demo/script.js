@@ -72,11 +72,11 @@ recognition.onspeechend = ()=> {
 
 // On No Match 
 recognition.onnomatch = (event)=> {
-  diagnostic.textContent = 'I didnt recognise that color.';
+  output.textContent = 'I didnt recognise that color.';
 }
 
 recognition.onerror = (event)=> {
-  diagnostic.textContent = 'Error occurred in recognition: ' + event.error;
+  output.textContent = 'Error occurred in recognition: ' + event.error;
 }
 
 
